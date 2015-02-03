@@ -46,15 +46,11 @@ body {background-color:#e5e3e2;}
 }
 
 #browser_blocker .bb_top {
-    width:100%;
     padding:35px;
     border-bottom:1px solid #e1dfde;
 }
 
-#browser_blocker .bb_bottom {
-    width:100%;
-    padding:15px;
-}
+#browser_blocker .bb_bottom {padding:15px;}
 
 
 /* Typography */
@@ -98,9 +94,12 @@ body {background-color:#e5e3e2;}
     margin:20px;
 }
 
+#browser_blocker li a,
 #browser_blocker li img {
     width:60px;
     height:60px;
+    border:0;
+    outline:none;
 }
 
 
