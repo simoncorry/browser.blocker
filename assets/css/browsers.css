@@ -1,0 +1,159 @@
+@charset "UTF-8";
+
+
+/* START - REMOVE ME, I'M HERE FOR TESTING ONLY! */ 
+#browser_blocker {display:block !important;} 
+body {background-color:#e5e3e2;}
+/* END */
+
+
+
+
+/* Structure */
+
+#browser_blocker {
+    display:none;
+    z-index:999999;
+    position:absolute;
+    top:0px; left:0px;
+    width:100%;
+    height:100%;
+    text-align:center;
+}
+
+#browser_blocker:before {
+    display:inline-block;
+    height:100%;
+    margin-right:-0.25em;
+    vertical-align:middle;
+    content:'';
+}
+
+#browser_blocker .bb_wrapper {
+    display:inline-block;
+    max-width:560px;
+    padding:20px;
+    vertical-align:middle;
+}
+
+
+/* Article */
+
+#browser_blocker .bb_card {
+    background-color: #fffefd;
+    border: 1px solid #c1bfbe;
+    outline:1px solid #e8e7e6;
+}
+
+#browser_blocker .bb_top {
+    width:100%;
+    padding:35px;
+    border-bottom:1px solid #e1dfde;
+}
+
+#browser_blocker .bb_bottom {
+    width:100%;
+    padding:15px;
+}
+
+
+/* Typography */
+
+#browser_blocker h2 {
+    font-family:Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight:normal;
+    font-size:25px;
+    line-height:35px;
+    margin-bottom:25px;
+    text-align:left;
+    color:#444240;
+}
+
+#browser_blocker p {
+    font-family:Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight:300;
+    font-size:17px;
+    line-height:29px;
+    text-align:left;
+    color:#595755;
+}
+
+
+/* Icons */
+
+#browser_blocker ul {
+    max-width:400px; 
+    border:none; 
+    padding:0px; 
+    margin:0px auto; 
+    list-style-type:none;
+}
+
+#browser_blocker li {
+    float:left;
+    background:none;
+    width:60px;
+    height:60px;
+    padding:0px;
+    margin:20px;
+}
+
+#browser_blocker li img {
+    width:60px;
+    height:60px;
+}
+
+
+/* Global */
+
+.clearfix:before, 
+.clearfix:after {
+    display:table;
+    content:"";
+}
+.clearfix:after {clear:both;}
+.clearfix {zoom:1;}
+
+
+/* Trigger */
+
+/* Set to desired CSS feature via Modernizr http://bit.ly/1LFSz93 */
+html.no-csstransitions #browser_blocker {display:block;}
+html.no-csstransitions body {background-color:#e5e3e2;}
+
+
+/* Responsive */
+
+@media only screen and (max-width : 415px) {
+
+    
+    /* Article */
+    
+    #browser_blocker .bb_top    {padding:25px;}
+    #browser_blocker .bb_bottom {padding:5px;}
+    
+    
+    /* Typography */
+    
+    #browser_blocker h2 {
+        font-size:20px;
+        line-height:30px;
+    }
+    #browser_blocker p {
+        font-size:14px;
+        line-height:25px;
+    }
+    
+    
+    /* Icons */
+
+    #browser_blocker li {margin:15px;}
+
+    #browser_blocker li,
+    #browser_blocker li img {
+        width:40px;
+        height:40px;
+    }
+    
+    
+}
