@@ -20,6 +20,7 @@ body {background-color:#e5e3e2;}
     height:100%;
     text-align:center;
 }
+.ie #browser_blocker {min-width:600px;}
 
 #browser_blocker:before {
     display:inline-block;
@@ -32,6 +33,7 @@ body {background-color:#e5e3e2;}
 #browser_blocker .bb_wrapper {
     display:inline-block;
     max-width:560px;
+    min-width:280px;
     padding:20px;
     vertical-align:middle;
 }
@@ -45,12 +47,12 @@ body {background-color:#e5e3e2;}
     outline:1px solid #e8e7e6;
 }
 
+#browser_blocker .bb_bottom {padding:15px;}
+
 #browser_blocker .bb_top {
     padding:35px;
     border-bottom:1px solid #e1dfde;
 }
-
-#browser_blocker .bb_bottom {padding:15px;}
 
 
 /* Typography */
@@ -77,41 +79,23 @@ body {background-color:#e5e3e2;}
 
 /* Icons */
 
-#browser_blocker ul {
-    max-width:400px; 
-    border:none; 
-    padding:0px; 
-    margin:0px auto; 
-    list-style-type:none;
+#browser_blocker table {
+    max-width:400px;
+    margin:0 auto;
 }
 
-#browser_blocker li {
-    float:left;
-    background:none;
+#browser_blocker td {padding:15px;}
+ 
+#browser_blocker a,
+#browser_blocker img {
     width:60px;
     height:60px;
-    padding:0px;
-    margin:20px;
 }
-
-#browser_blocker li a,
-#browser_blocker li img {
-    width:60px;
-    height:60px;
+    
+#browser_blocker img {
     border:0;
     outline:none;
 }
-
-
-/* Global */
-
-.clearfix:before, 
-.clearfix:after {
-    display:table;
-    content:"";
-}
-.clearfix:after {clear:both;}
-.clearfix {zoom:1;}
 
 
 /* Trigger */
@@ -123,7 +107,7 @@ html.no-csstransitions body {background-color:#e5e3e2;}
 
 /* Responsive */
 
-@media only screen and (max-width : 415px) {
+@media only screen and (max-width : 431px) {
 
     
     /* Article */
@@ -135,9 +119,11 @@ html.no-csstransitions body {background-color:#e5e3e2;}
     /* Typography */
     
     #browser_blocker h2 {
+        margin-bottom:15px;
         font-size:20px;
         line-height:30px;
     }
+    
     #browser_blocker p {
         font-size:14px;
         line-height:25px;
@@ -145,11 +131,10 @@ html.no-csstransitions body {background-color:#e5e3e2;}
     
     
     /* Icons */
+    
+    #browser_blocker td {padding:15px 10px;}
 
-    #browser_blocker li {margin:15px;}
-
-    #browser_blocker li,
-    #browser_blocker li img {
+    #browser_blocker img {
         width:40px;
         height:40px;
     }
